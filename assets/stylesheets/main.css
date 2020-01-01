@@ -1,0 +1,95 @@
+body {  
+        background-image: url("assets/images/stars.jpg");
+        background-color: black;
+        background-size: cover;
+        /* background-image element just works in head but not in stylesheet. Why? */
+}
+
+h1 {
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(229,177,58);
+        background-color: black;
+}
+
+.intro  {
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(229,177,58);
+        background-color: black;
+}
+
+#yoda {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: auto;
+        height: 25%;
+        padding: 25px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px white inset;
+}
+
+#portrait {
+        width: auto;
+        height: 50%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+}
+
+#list_portrait {
+        margin: auto;
+        width: 500px;
+        background-color: rgba(0,0,0,0.6);
+        box-shadow: 0 0 15px 15px black;
+}
+
+.unordered_list {
+        text-align: left;
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(229,177,58);
+}
+
+.ordered_sublist {
+        padding: 25px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: normal;
+        display: inline-block; /*prevents text decoration from getting inherited to sublist https://stackoverflow.com/questions/30388378/inheritance-of-parent-text-decoration */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(229,177,58);
+}
+
+#click_me_div {
+        text-align: center;
+        margin-bottom: 50px;
+}
+
+#click_me_button {
+        height: 75px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: bolder;
+}
+
+#position_darthvader {
+        position: relative;
+}
+
+#darthvader {
+        position: absolute;
+        height: 200px;  /* why does realtive sizing (eg 50%) make the images disappear? */
+        width: auto;
+        border-radius: 50%;
+        padding: 25px;
+        box-shadow: 0 0 0 4px white inset;           
+        bottom: 10px;
+        right: 0px;
+}
